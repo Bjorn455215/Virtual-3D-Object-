@@ -38,6 +38,14 @@
 | **拇指食指捏合拉開** | ZOOM READY | 縮放物件大小 |
 | **握拳 (Grab)** | 歸位 | 將物件重置為初始大小 |
 
+## ⌨️ 快速啟動 (Quick Start)
+
+請依照下列步驟進行專案設定：
+
+### 1. 複製存儲庫 (Clone the Repo)
+首先，請先下載參考連結中的 Repository
+
+
 
 ## 實測影片(Video)
 https://github.com/user-attachments/assets/7fbd7a33-be38-4f4c-9c99-f188a7ef729a
