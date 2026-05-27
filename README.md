@@ -1,5 +1,5 @@
 # Holographic Gesture AR System (OpenCV Based) 🖐️✨
-這是一個基於 Python 與 OpenCV 開發的增廣實境（AR）應用系統。透過 MediaPipe 進行即時手勢偵測，並利用自定義的 3D 渲染引擎將虛擬的霓虹立方體投影在現實世界中，支援多種手勢互動功能。
+基於 Python 與 OpenCV 開發的增廣實境（AR）應用系統。透過 MediaPipe 進行即時手勢偵測，並利用自定義的 3D 渲染引擎將虛擬的霓虹立方體投影在現實世界中，支援多種手勢互動功能。
 
 ## 🚀 核心功能 (Key Features)
 
@@ -25,11 +25,7 @@
 
 ## 📝 投影與渲染原理 (Rendering Pipeline)
 
-系統透過 **相機內參矩陣 (Camera Intrinsic Matrix)** 將虛擬 3D 座標投影至 2D 像素平面。投影公式遵循以下原理：
-
-$$
-\begin{bmatrix} u \\ v \\ 1 \end{bmatrix} = K \begin{bmatrix} R & t \end{bmatrix} \begin{bmatrix} X_w \\ Y_w \\ Z_w \\ 1 \end{bmatrix}
-$$
+系統透過 **相機內參矩陣 (Camera Intrinsic Matrix)** 將虛擬 3D 座標投影至 2D 像素平面。
 
 在程式中使用 `cv2.projectPoints` 進行轉換，確保虛擬物件在 3D 空間移動時具備物理真實感。
 
@@ -37,11 +33,11 @@ $$
 
 | 手勢 / 動作 | 介面反饋 | 功能說明 |
 | :--- | :--- | :--- |
-| **五指張開並下拉** | 選單滑動 | 開啟/關閉右側功能選單 |
-| **食指停留在按鈕** | 綠色讀條 | 觸發選單功能 (Dwell Click) |
-| **手掌由合變開** | 霓虹光芒 | 生成新物件 (CUBE / CONE) |
-| **拇指食指捏合拉開** | ZOOM READY | 縮放物件大小 (僅在 SCALE 模式) |
+| **食指中指伸直** | 移動手勢 | 手滑動即可拖移方塊 |
+| **手掌由合變開** | 霓虹光芒 | 生成新方塊 |
+| **拇指食指捏合拉開** | ZOOM READY | 縮放物件大小 |
 | **握拳 (Grab)** | 歸位 | 將物件重置為初始大小 |
+
 
 ## 實測影片(Video)
 https://github.com/user-attachments/assets/7fbd7a33-be38-4f4c-9c99-f188a7ef729a
