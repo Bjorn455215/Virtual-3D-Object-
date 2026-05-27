@@ -38,14 +38,32 @@
 | **拇指食指捏合拉開** | ZOOM READY | 縮放物件大小 |
 | **握拳 (Grab)** | 歸位 | 將物件重置為初始大小 |
 
-## ⌨️ 快速啟動 (Quick Start)
+## 📦 安裝與操作流程 (Installation & Usage)
 
-請依照下列步驟進行專案設定：
+請嚴格依照下列指令順序進行環境設定與執行：
+# 1. 下載專案 (Clone Repository)
+git clone [參考連結]
+cd [專案資料夾名稱]
 
-### 1. 複製存儲庫 (Clone the Repo)
-首先，請先下載參考連結中的 Repository
+# 2. 模組重命名 (Rename Component)
+# 為了讓主程式能正確引用模組，請將下載的 main.py 名稱更改為 gesture_system.py
+# Windows (PowerShell):
+rename-item main.py gesture_system.py
+# Linux / macOS / Git Bash:
+mv main.py gesture_system.py
 
+# 3. 環境初始化 (Environment Setup)
+# 建立虛擬環境
+python -m venv venv
+# 開啟虛擬環境 (Windows):
+.\venv\Scripts\activate
+# 開啟虛擬環境 (Linux/macOS):
+source venv/bin/activate
+# 安裝依賴套件
+pip install -r requirements.txt
 
+# 4. 啟動系統 (Execution)
+python original_project.py
 
 ## 實測影片(Video)
 https://github.com/user-attachments/assets/7fbd7a33-be38-4f4c-9c99-f188a7ef729a
