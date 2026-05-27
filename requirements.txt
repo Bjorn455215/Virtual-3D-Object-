@@ -1,0 +1,14 @@
+# Core dependencies for 3D Object Manipulation
+absl-py==2.3.1
+cffi==2.0.0
+flatbuffers==25.12.19
+mediapipe==0.10.30
+numpy==2.2.6
+opencv-python==4.12.0.88
+pip==26.1.1
+pycparser==2.23
+pygame-ce==2.5.7
+PyOpenGL==3.1.10
+PyOpenGL-accelerate==3.1.10
+setuptools==82.0.1
+sounddevice==0.5.5
